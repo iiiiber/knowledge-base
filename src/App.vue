@@ -339,6 +339,14 @@ onUnmounted(() => {
   --radius: 8px;
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  
+  /* 代码高亮颜色 - 浅色模式 */
+  --code-keyword: #d73a49;
+  --code-string: #032f62;
+  --code-comment: #6a737d;
+  --code-function: #6f42c1;
+  --code-number: #005cc5;
+  --code-text: #24292e;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -668,10 +676,11 @@ body {
 .main code {
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   background: var(--bg-secondary);
-  padding: 2px 4px;
+  padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.9em;
-  color: var(--accent);
+  color: var(--code-function);
+  border: 1px solid var(--border);
 }
 
 .main pre {
@@ -682,7 +691,7 @@ body {
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 13px;
   line-height: 1.7;
-  color: #cdd6f4;
+  color: var(--code-text);
   margin: 16px 0;
 }
 
@@ -971,5 +980,13 @@ kbd {
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
   --accent-light: rgba(99, 102, 241, 0.15);
+  
+  /* 代码高亮颜色 - 深色模式 */
+  --code-keyword: #ff7b72;
+  --code-string: #a5d6ff;
+  --code-comment: #8b949e;
+  --code-function: #d2a8ff;
+  --code-number: #79c0ff;
+  --code-text: #e6edf3;
 }
 </style>
