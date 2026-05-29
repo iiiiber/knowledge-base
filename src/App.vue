@@ -318,7 +318,7 @@ onUnmounted(() => {
 :root {
   --bg: #ffffff;
   --bg-secondary: #f7f8fc;
-  --bg-code: #1e1e2e;
+  --bg-code: #f6f8fa;
   --bg-sidebar: #f0f1f7;
   --border: #e2e4ef;
   --text-primary: #111827;
@@ -341,12 +341,12 @@ onUnmounted(() => {
   --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
   
   /* 代码高亮颜色 - 浅色模式 */
-  --code-keyword: #d73a49;
-  --code-string: #032f62;
-  --code-comment: #6a737d;
-  --code-function: #6f42c1;
-  --code-number: #005cc5;
-  --code-text: #24292e;
+  --code-keyword: #cf222e;
+  --code-string: #0a3069;
+  --code-comment: #57606a;
+  --code-function: #8250df;
+  --code-number: #0550ae;
+  --code-text: #24292f;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
